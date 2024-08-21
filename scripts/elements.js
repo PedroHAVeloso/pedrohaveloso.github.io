@@ -7,7 +7,7 @@ class CustomElement extends HTMLElement {
     super();
   }
 
-  attr(name = "", settings = { remove: true, defaultValue: "" }) {
+  attr(name = "", settings = { remove: false, defaultValue: "" }) {
     const attr = this.getAttribute(name) ?? settings.defaultValue;
 
     if (settings.remove) {
@@ -38,7 +38,7 @@ class ContactLinkItem extends CustomElement {
     const content = html`
       <p>
         <strong>${this.attr("title")}:</strong>
-        <a href="${this.attr("href")}">${this.attr("link")}</a>
+        <a target="_blank" href="${this.attr("href")}">${this.attr("link")}</a>
       </p>
     `;
 
