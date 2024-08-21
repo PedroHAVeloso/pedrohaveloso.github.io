@@ -3,76 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta name="description" content="Currículo, Pedro Veloso." />
+    <title>Pedro Veloso | Currículo</title>
 
+    <!-- CSS: -->
     <link rel="stylesheet" href="./resume.css" />
 
-    <title>Pedro Veloso | Currículo</title>
+    <!-- Google fonts preconnect: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google fonts, Poppins: -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <div>
         <h1>Pedro Henrique Alves Veloso</h1>
+        
         <h2>
           <em>Desenvolvedor Web</em>
         </h2>
       </div>
 
-      <img src="./images/profile.jpg" alt="Gatinho de perfil." />
+      <img width="100" src="./images/profile.jpg" alt="Gatinho de perfil." />
     </header>
 
     <main>
       <section>
         <h3>Links de contato e endereço</h3>
 
-        <div class="links__content">
-          <ul>
-            <li>
-              <p>
-                <strong>LinkedIn:</strong>
-                <a href="https://www.linkedin.com/in/pedrohaveloso">
-                  linkedin.com/in/pedrohaveloso
-                </a>
-              </p>
-            </li>
+        <contact-link>
+          <contact-link-item
+            title="LinkedIn"
+            href="https://www.linkedin.com/in/pedrohaveloso"
+            link="linkedin.com/in/pedrohaveloso"
+          ></contact-link-item>
 
-            <li>
-              <p>
-                <strong>GitHub:</strong>
-                <a href="https://www.github.com/pedrohaveloso">
-                  github.com/pedrohaveloso
-                </a>
-              </p>
-            </li>
+          <contact-link-item
+            title="GitHub"
+            href="https://www.github.com/pedrohaveloso"
+            link="github.com/pedrohaveloso"
+          ></contact-link-item>
 
-            <li>
-              <p>
-                <strong>Telefone:</strong>
-                <a href="telto:+5514920021247"> 14 92002-1247 </a>
-              </p>
-            </li>
-          </ul>
+          <contact-link-item
+            title="Telefone"
+            href="telto:+5514920021247"
+            link="14 92002-1247"
+          ></contact-link-item>
 
-          <ul>
-            <li>
-              <p>
-                <strong>E-mail:</strong>
-                <a href="mailto:contatopedrohalves@gmail.com">
-                  contatopedrohalves@gmail.com
-                </a>
-              </p>
-            </li>
+          <contact-link-item
+            title="E-mail"
+            href="mailto:contatopedrohalves@gmail.com"
+            link="contatopedrohalves@gmail.com"
+          ></contact-link-item>
 
-            <li>
-              <p>
-                <strong>Endereço:</strong>
-                Jardim Julieta, Marília
-              </p>
-            </li>
-          </ul>
-        </div>
+          <contact-link-item
+            title="Endereço"
+            href="https://maps.app.goo.gl/XZBTbhx1KEPrXRf78"
+            link="Marília"
+          ></contact-link-item>
+        </contact-link>
       </section>
 
       <section>
@@ -112,32 +107,27 @@
       <section>
         <h3>Experiência</h3>
 
-        <ol class="xp__content">
-          <li>
-            <p class="xp_content__item">
-              <strong>Júnior</strong>, Próponto Soluções em Incentivo,
-              Marília-SP.
-              <br />
-              <strong>Desenvolvedor web</strong> - Remoto. Dez. de 2023 -
-              Presente.
-              <br />
-              Sistema web de incentivo. <b>Tecnologias:</b> PHP, Zend,
-              JavaScript, MySQL, Docker.
-            </p>
-          </li>
+        <work-history>
+          <work-history-item
+            post="Desenvolvedor Web"
+            title="Júnior"
+            company="Próponto Soluções em Incentivo"
+            period="Dez. de 2023 - Presente"
+            desc="Sistema web de incentivo"
+            skills="PHP, Zend, JavaScript, MySQL"
+          >
+          </work-history-item>
 
-          <li>
-            <p class="xp_content__item">
-              <strong>Estagiário</strong>, Sisfrete, Marília-SP.
-              <br />
-              <strong>Desenvolvedor web</strong> - Remoto. Set. de 2023 - Nov.
-              de 2023.
-              <br />
-              Sistema gerenciador de fretes. <b>Tecnologias:</b> PHP, Laravel,
-              JavaScript, Vue.js, MySQL, Docker.
-            </p>
-          </li>
-        </ol>
+          <work-history-item
+            post="Desenvolvedor Web"
+            title="Estagiário"
+            company="Sisfrete"
+            period=" Set. de 2023 - Nov. de 2023"
+            desc="Sistema gerenciador de fretes"
+            skills="PHP, Laravel, JavaScript, Vue.js, MySQL, Docker"
+          >
+          </work-history-item>
+        </work-history>
       </section>
 
       <section>
@@ -178,5 +168,8 @@
         </ol>
       </section>
     </main>
+
+    <!-- Scripts: -->
+    <script defer type="module" src="./scripts/main.js"></script>
   </body>
 </html>
