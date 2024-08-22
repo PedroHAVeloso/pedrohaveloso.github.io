@@ -1,0 +1,15 @@
+contact-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-extra-small);
+}
+
+contact-link-item {
+  flex: 1 300px;
+}
+
+work-history {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-extra-small);
+}

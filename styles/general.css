@@ -1,14 +1,3 @@
-:root {
-  --primary-title-color: #933fff;
-  --primary-font-family: "Poppins", "Segoe UI", sans-serif;
-
-  --gap-extra-large: 30px;
-  --gap-large: 25px;
-  --gap-medium: 20px;
-  --gap-small: 15px;
-  --gap-extra-small: 10px;
-}
-
 * {
   font-family: var(--primary-font-family);
   margin: 0px;
@@ -67,22 +56,6 @@ ol,
 ul {
   list-style-type: none;
 
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-extra-small);
-}
-
-contact-link {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap-extra-small);
-}
-
-contact-link-item {
-  flex: 1 300px;
-}
-
-work-history {
   display: flex;
   flex-direction: column;
   gap: var(--gap-extra-small);
