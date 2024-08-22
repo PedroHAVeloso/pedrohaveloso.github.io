@@ -47,9 +47,25 @@ section {
   gap: var(--gap-small);
 }
 
+p {
+  text-align: start;
+}
+
+@media (width <= 600px) {
+  p {
+    text-align: justify;
+  }
+}
+
 h3 {
   text-transform: uppercase;
   color: var(--primary-title-color);
+}
+
+@media (width <= 600px) {
+  h3 {
+    text-align: center;
+  }
 }
 
 ol,
@@ -59,4 +75,13 @@ ul {
   display: flex;
   flex-direction: column;
   gap: var(--gap-extra-small);
+}
+
+footer {
+  margin: 40px 0px;
+}
+
+footer p {
+  text-align: center;
+  font-style: italic;
 }
