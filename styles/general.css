@@ -1,5 +1,6 @@
 * {
   font-family: var(--primary-font-family);
+  font-display: swap;
   margin: 0px;
   padding: 0px;
 }

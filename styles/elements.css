@@ -2,6 +2,7 @@ contact-link {
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap-extra-small);
+  min-height: 80px;
 }
 
 contact-link-item {
@@ -12,4 +13,5 @@ work-history {
   display: flex;
   flex-direction: column;
   gap: var(--gap-extra-small);
+  min-height: 250px;
 }
